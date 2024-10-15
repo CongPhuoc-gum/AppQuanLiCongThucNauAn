@@ -3,8 +3,11 @@
     import android.annotation.SuppressLint;
     import android.os.Bundle;
     import android.os.PersistableBundle;
+    import android.view.MenuItem;
     import android.view.View;
     import android.widget.Button;
+
+    import
 
     import androidx.annotation.NonNull;
     import androidx.appcompat.app.AppCompatActivity;
@@ -15,23 +18,31 @@
     import com.example.appquanlicongthucnauan.login_register.login_fragment;
     import com.example.appquanlicongthucnauan.login_register.register;
     import com.google.android.material.bottomnavigation.BottomNavigationView;
+    import com.google.android.material.tabs.TabLayout;
 
     public class MainActivity extends AppCompatActivity {
 
 
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        if( == null ){
-            getSupportFragmentManager().beginTransaction().replace(R.id.)
-        }
 
 
         Button btn_login;
         Button btn_register;
         /** @noinspection deprecation*/
-        @SuppressLint("WrongViewCast")
+        @SuppressLint({"WrongViewCast", "NonConstantResourceId"})
         @Override
         protected void onCreate(Bundle savedInstanceState) {
+
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+            if(savedInstanceState == null){
+                getSupportFragmentManager().beginTransaction().replace(R.id.home2, new home()).commit();
+            }
+
+            bottomNavigationView.setOnNavigationItemSelectedListener(this::onNavigationItemSelected);
+
+
+
+
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
 
@@ -63,8 +74,30 @@
 
         }
 
-        @Override
-        public void onSaveInstanceState(@NonNull Bundle outState, @NonNull PersistableBundle outPersistentState) {
-            super.onSaveInstanceState(outState, outPersistentState);
+        private boolean onNavigationItemSelected(MenuItem item) {
+            Fragment selectFragment = null;
+            switch (item.getItemId()) {
+                case R.id.nav_home:
+                    selectFragment = new home();
+                    break;
+                case R.id.nav_library:
+                    selectFragment = new home();
+                    break;
+                case R.id.search:
+                    selectFragment = new home();
+                    break;
+                case R.id.favorite:
+                    selectFragment = new home();
+                    break;
+                case R.id.profile:
+                    selectFragment = new home();
+                    break;
+            }
+
+            if (selectFragment != null) {
+                getSupportFragmentManager().beginTransaction().replace(R.id.home2, selectFragment).commit();
+            }
+
+            return false;
         }
     }
