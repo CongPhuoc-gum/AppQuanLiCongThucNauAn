@@ -92,7 +92,4 @@ public class home extends Fragment {
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
-
-
-
 }
