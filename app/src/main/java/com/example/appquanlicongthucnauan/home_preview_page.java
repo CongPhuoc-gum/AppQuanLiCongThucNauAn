@@ -4,60 +4,33 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link home_preview_page#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class home_preview_page extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public home_preview_page() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment home_preview_page.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static home_preview_page newInstance(String param1, String param2) {
-        home_preview_page fragment = new home_preview_page();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+    ImageButton btn_back;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_preview_page, container, false);
+        View view = inflater.inflate(R.layout.fragment_home_preview_page, container, false);
+        btn_back = view.findViewById(R.id.btn_back);
+
+        // Xử lý sự kiện cho btn_back để quay lại fragment trước đó
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getParentFragmentManager();
+                if (fragmentManager != null) {
+                    fragmentManager.popBackStack("home", FragmentManager.POP_BACK_STACK_INCLUSIVE);
+                }
+            }
+        });
+
+
+        return view;
     }
 }

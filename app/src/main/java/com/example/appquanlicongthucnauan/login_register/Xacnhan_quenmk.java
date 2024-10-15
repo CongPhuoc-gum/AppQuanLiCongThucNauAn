@@ -28,7 +28,7 @@ public class Xacnhan_quenmk extends Fragment {
         btn_go_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Quay lại Fragment trước đó
+
                 getParentFragmentManager().popBackStack();
             }
         });
