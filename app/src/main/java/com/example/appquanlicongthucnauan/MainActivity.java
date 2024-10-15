@@ -16,8 +16,6 @@
 
     public class MainActivity extends AppCompatActivity {
 
-        private ViewPager viewPager;
-        private BottomNavigationView bottomNavigationView;
 
         Button btn_login;
         Button btn_register;
@@ -27,10 +25,6 @@
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
-
-//            viewPager = findViewById(R.id.view_paper)
-
-
 
             btn_login = findViewById(R.id.button_login);
             btn_register = findViewById(R.id.button_register);
