@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp">
+
+    <LinearLayout
+        android:id="@+id/big_card"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/small_card">
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/banhmi"
+            android:contentDescription="@string/b_nh_m_vi_t">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/b_nh_m_vi_t_nam"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/star_rating">
+            </ImageView>
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="60dp"
+                android:text="@string/_4_8"
+                android:textSize="25sp">
+            </TextView>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ellipse"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="110dp"
+                android:contentDescription="@string/ellipse">
+            </ImageView>
+            <TextView
+                android:layout_width="153.04dp"
+                android:layout_height="wrap_content"
+                android:text="@string/vi_t_nam"
+                android:layout_marginStart="150dp"
+                android:gravity="center_vertical"
+                android:textSize="23sp"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="263.65dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:text="@string/gioithieubanhmi"
+            android:gravity="top"
+            android:textSize="15sp"
+            />
+        <Button
+            android:id="@+id/big_card_check"
+            android:layout_width="263.65dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button"
+            android:text="@string/check"
+            android:textSize="15sp">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

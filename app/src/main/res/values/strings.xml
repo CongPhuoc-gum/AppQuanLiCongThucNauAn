@@ -92,4 +92,34 @@ Chuẩn bị thịt:\n
 Nếu sử dụng thịt heo quay hoặc gà nướng, cắt lát mỏng. Nếu dùng chả lụa, cũng cắt lát mỏng và sắp sẵn ra đĩa.\n
 Phết pate và mayonnaise:\n
 Phết một lớp pate và một ít mayonnaise vào hai nửa bánh mì.</string>
+    <string name="tim_kiem">Tìm công thức</string>
+    <string name="interactive">Điền mẫu theo yêu cầu</string>
+    <string name="input_title_like">Thành phần bạn muốn?</string>
+    <string name="input_title_dislike">Thành phần bạn không muốn?</string>
+    <string name="input_title">Tổng thời gian</string>
+    <string name="input_atom_">Hãy đặt thời gian tối đa</string>
+    <string name="input_title_khauphan">Khẩu phần</string>
+    <string name="placeholder02">2</string>
+    <string name="input_atom_02">Hãy nhập tối đa</string>
+    <string name="button_text">Tìm công thức</string>
+    <string name="t_m_c_ng_th_c">Xem thêm</string>
+    <string name="kh_ng_bi_t_">Không biết nên ăn gì. Đừng lo, Yummy sẽ giúp bạn tìm những món ăn bạn muốn dựa trên sở thích ăn uống của bạn.</string>
+    <string name="c_c_m_c_xem">Các mục đã xem trước đó</string>
+    <string name="xem_t_t_c_">Xem tất cả</string>
+    <string name="b_nh_m_vi_t">Bánh mì Việt Nam</string>
+    <string name="vi_t_nam">Việt Nam</string>
+    <string name="_4_8">4.8</string>
+    <string name="b_nh_m_vi_t_nam">Bánh mì Việt Nam</string>
+    <string name="gioithieubanhmi">Bánh mì Việt Nam là lựa chọn tuyệt vời cho bữa ăn nhanh và đơn giản trong tuần. Bạn có thể sử dụng thịt heo quay, gà nướng, hoặc chả lụa, kẹp cùng với rau củ như dưa leo, cà rốt, và ngò. Chưa đầy 20 phút từ khi bắt đầu đến lúc thưởng thức!</string>
+    <string name="check">Kiểm tra</string>
+    <string name="cthucyeuthich">Công thức được yêu thích</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="banhmi_review">Bánh Mì là món ăn truyền thống của người Việt</string>
+    <string name="trungsua">&#32;&#32;&#32;Trứng, sữa,....</string>
+    <string name="carau">&#32;&#32;&#32;Cá, rau,...</string>
+    <string name="phut">&#32;&#32;&#32;3 phút</string>
+    <string name="_2">&#32;&#32;&#32;2</string>
+    <string name="back">back</string>
+    <string name="ellipse">ellipse</string>
+    <string name="timcongthuc">Tìm công thức</string>
 </resources>
