@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.appquanlicongthucnauan.MainActivity;
 import com.example.appquanlicongthucnauan.R;
+import com.example.appquanlicongthucnauan.home;
 
 public class login_fragment extends Fragment {
 
@@ -51,14 +52,11 @@ public class login_fragment extends Fragment {
             public void onClick(View view) {
                 btn_login.setVisibility(View.GONE);
                 /////////////////chỗ này để trang chủ của Phước
-                Fragment fragment = new forgetpass();
+                Fragment fragment = new home();
                 FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.login_page, fragment).commit();
             }
         });
-
-
-
         return view;
     }
 
