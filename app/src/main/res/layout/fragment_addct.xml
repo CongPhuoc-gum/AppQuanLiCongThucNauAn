@@ -3,13 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
 
     <ImageButton
         android:id="@+id/btn_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
+        android:contentDescription="Back"
         android:background="?attr/actionBarItemBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +62,7 @@
             <EditText
                 android:id="@+id/input_recipe_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:hint="Nhập tên công thức"
                 android:backgroundTint="@android:color/darker_gray" />
 
@@ -77,7 +79,8 @@
             <EditText
                 android:id="@+id/input_description"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_border"
                 android:hint="Nhập mô tả"
                 android:backgroundTint="@android:color/darker_gray" />
 
@@ -93,7 +96,8 @@
             <Spinner
                 android:id="@+id/spinner_cooking_time"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:background="@drawable/rounded_border"
+                android:layout_height="48dp"/>
 
             <TextView
                 android:id="@+id/label_servings"
@@ -107,7 +111,8 @@
             <Spinner
                 android:id="@+id/spinner_servings"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:background="@drawable/rounded_border"
+                android:layout_height="48dp" />
 
             <!-- Ingredients Button -->
             <TextView
@@ -142,6 +147,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:hint="Nhập quy trình nấu"
+                android:background="@drawable/rounded_border"
                 android:gravity="top"
                 android:inputType="textMultiLine"
                 android:backgroundTint="@android:color/darker_gray" />
@@ -170,7 +176,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
         android:text="Tiếp"
-        tools:layout_editor_absoluteX="305dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_title"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

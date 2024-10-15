@@ -11,23 +11,17 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.viewpager.widget.ViewPager;
 
 import com.example.appquanlicongthucnauan.login_register.Nhap_mk_moi;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class home extends Fragment {
-
-    private ViewPager viewPager;
-    private BottomNavigationView bottomNavigationView;
 
     Button create_recipe;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState)
-    {
+                             Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_home2, container, false);
 
@@ -98,6 +92,7 @@ public class home extends Fragment {
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
+
 
 
 }
