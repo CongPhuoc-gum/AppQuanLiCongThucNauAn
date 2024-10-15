@@ -16,7 +16,7 @@ import com.example.appquanlicongthucnauan.login_register.Nhap_mk_moi;
 
 public class home extends Fragment {
 
-    Button create_recipe;
+    Button btn_create_recipe;
 
 
     @Override
@@ -25,7 +25,7 @@ public class home extends Fragment {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_home2, container, false);
 
-        create_recipe = view.findViewById(R.id.btn_create_new);
+        btn_create_recipe = view.findViewById(R.id.btn_create_new);
         CardView cardView = view.findViewById(R.id.card_view);
         cardView.setOnClickListener(new View.OnClickListener(){
 
@@ -38,15 +38,15 @@ public class home extends Fragment {
         TextView viewMoreTextView = view.findViewById(R.id.view_more);
         TextView viewMoreTextView1 = view.findViewById(R.id.view_more1);
 
-        create_recipe.setOnClickListener(new View.OnClickListener() {
+        btn_create_recipe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentManager fragmentManager = getParentFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                Fragment create_new_recipe = new Nhap_mk_moi();
+                Fragment create_new_recipe = new addct();
                 FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
                 fm.addToBackStack(null);
-                fm.replace(R.id.forgetpass_2, create_new_recipe).commit();
+                fm.replace(R.id.home2, create_new_recipe).commit();
 
             }
         });
