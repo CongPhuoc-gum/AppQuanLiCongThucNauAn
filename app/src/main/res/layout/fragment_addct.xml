@@ -146,7 +146,7 @@
                 android:inputType="textMultiLine"
                 android:backgroundTint="@android:color/darker_gray" />
 
-
+            <
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

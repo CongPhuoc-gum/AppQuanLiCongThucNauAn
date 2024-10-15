@@ -2,9 +2,11 @@
 
     import android.annotation.SuppressLint;
     import android.os.Bundle;
+    import android.os.PersistableBundle;
     import android.view.View;
     import android.widget.Button;
 
+    import androidx.annotation.NonNull;
     import androidx.appcompat.app.AppCompatActivity;
     import androidx.fragment.app.Fragment;
     import androidx.fragment.app.FragmentTransaction;
@@ -15,6 +17,13 @@
     import com.google.android.material.bottomnavigation.BottomNavigationView;
 
     public class MainActivity extends AppCompatActivity {
+
+
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        if( == null ){
+            getSupportFragmentManager().beginTransaction().replace(R.id.)
+        }
 
 
         Button btn_login;
@@ -52,5 +61,10 @@
             });
 
 
+        }
+
+        @Override
+        public void onSaveInstanceState(@NonNull Bundle outState, @NonNull PersistableBundle outPersistentState) {
+            super.onSaveInstanceState(outState, outPersistentState);
         }
     }
