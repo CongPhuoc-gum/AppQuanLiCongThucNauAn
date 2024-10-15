@@ -1,3 +1,53 @@
 <resources>
-    <string name="app_name">AppQuanLiCongThucNauAn</string>
+    <string name="app_name">Cooking app</string>
+    <string name="yummy">Yummy</string>
+    <string name="yummy_xin_c">
+    Yummy xin chào
+    </string>
+    <string name="r_t_vui_khi">
+    Rất vui khi gặp bạn
+</string>
+    <string name="text_dangnhap">
+        Tên đăng nhập (Hoặc Email)
+    </string>
+    <string name="text_matkhau">
+        Nhập mật khẩu
+    </string>
+    <string name="text_matkhau_l2">
+        Nhập lại mật khẩu
+    </string>
+
+    <string name="txt_dangnhap">
+        Đăng nhập
+    </string>
+    <string name="txt_dangky">
+        Đăng ký
+    </string>
+    <string name="text_quenmk">
+        Bạn quên mật khẩu?
+    </string>
+    <string name="text_huongdan">
+        Chúng tôi đã gửi mã xác nhận thay đổi mật khẩu đến email của bạn. Vui lòng kiểm tra hộp thư hoặc thư rác của bạn.
+</string>
+    <string name="text_nhapmaxn">
+        Nhập mã xác nhận
+    </string>
+    <string name="btn_xacnhan">
+        Xác nhận
+    </string>
+    <string name="text_nhapmkl2">
+        Nhập lại mật khẩu
+    </string>
+
+    <string name="text_trangcanhan">Trang cá nhân</string>
+    <string name="text_username_profile">Phan Công Phước</string>
+    <string name="text_email_profile">nhomsk1@gmail.com</string>
+    <string name="text_favorite_profile">Món ăn yêu thích cả bạn</string>
+    <string name="text_thucpham">Thực phẩm yêu thích</string>
+    <string name="text_yourrecipes_profile">Công thức của bạn </string>
+    <string name="text_profile_edit">Họ và tên</string>
+    <string name="text_email_profile_edit">Email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
