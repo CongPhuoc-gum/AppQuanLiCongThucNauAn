@@ -51,9 +51,9 @@
                         android:textSize="16sp" />
 
                     <TextView
-                        android:id="@+id/view_more"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:id="@+id/view_more1"
+                        android:layout_width="70dp"
+                        android:layout_height="48dp"
                         android:layout_marginRight="16dp"
                         android:clickable="true"
                         android:onClick="onViewMoreClicked"
@@ -99,15 +99,17 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:fontFamily="@font/abeezee"
+                        android:layout_gravity="center"
                         android:text="@string/string_title_2"
                         android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/view_more"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="70dp"
+                        android:layout_height="48dp"
                         android:layout_marginRight="16dp"
                         android:clickable="true"
+                        android:gravity="center"
                         android:text="@string/string_more"
                         android:textSize="14sp"
                         tools:ignore="OnClick" />

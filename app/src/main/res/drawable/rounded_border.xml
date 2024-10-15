@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent" /> <!-- Màu nền trong suốt -->
+    <stroke
+        android:width="2dp"
+        android:color="#66979292" /> <!-- Độ dày và màu viền mờ (sử dụng mã màu hex) -->
+</shape>

@@ -40,7 +40,7 @@
                 android:id="@+id/star_rating"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:background="@drawable/star_rating">
+                android:background="@drawable/ic_star">
 
             </ImageView>
 

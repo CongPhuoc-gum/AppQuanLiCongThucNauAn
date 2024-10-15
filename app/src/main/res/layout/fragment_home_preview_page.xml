@@ -10,15 +10,13 @@
 
     <ImageButton
         android:id="@+id/btn_back"
-        android:layout_width="12dp"
-        android:layout_height="10dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:background="?attr/actionBarItemBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="back"
+        android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_back" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_title"
