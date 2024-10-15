@@ -8,11 +8,17 @@
     import androidx.appcompat.app.AppCompatActivity;
     import androidx.fragment.app.Fragment;
     import androidx.fragment.app.FragmentTransaction;
+    import androidx.viewpager.widget.ViewPager;
 
     import com.example.appquanlicongthucnauan.login_register.login_fragment;
     import com.example.appquanlicongthucnauan.login_register.register;
+    import com.google.android.material.bottomnavigation.BottomNavigationView;
 
     public class MainActivity extends AppCompatActivity {
+
+        private ViewPager viewPager;
+        private BottomNavigationView bottomNavigationView;
+
         Button btn_login;
         Button btn_register;
         /** @noinspection deprecation*/
@@ -21,6 +27,9 @@
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
+
+//            viewPager = findViewById(R.id.view_paper)
+
 
 
             btn_login = findViewById(R.id.button_login);
@@ -48,54 +57,6 @@
                 }
             });
 
-//            BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-//
-//            bottomNavigationView.setOnNavigationItemSelectedListener(new OnNavigationItemSelectedListener() {
-//                /**
-//                 * Called when an item in the navigation menu is selected.
-//                 *
-//                 * @param item The selected item
-//                 * @return true to display the item as the selected item and false if the item should not be
-//                 * selected. Consider setting non-selectable items as disabled preemptively to make them
-//                 * appear non-interactive.
-//                 */
-//
-//                @Override
-//                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//                    Fragment selectedFragment = null;
-//
-//                    switch (item.getItemId()) {
-//                        case R.id.nav_home:
-//                            selectedFragment = new home();
-//                            break;
-//                        case R.id.nav_library:
-//                            selectedFragment = new library();
-//                            break;
-//    //                        cho em sinh
-//    //                    case R.id.search  :
-//    //                        selectedFragment = new FragmentFavorites();
-//    //                        break;
-//    //                    case R.id.favorite:
-//    //                        selectedFragment = new FragmentProfile();
-//    //                        break;
-//    //                    case R.id.user:
-//    //                        selectedFragment = new FragmentSettings();
-//    //                        break;
-//                    }
-//
-//                    return loadFragment(selectedFragment);
-//                }
-//            });
-//        }
-//        private boolean loadFragment(Fragment fragment) {
-//            // chuyển đổi giữa các fragment
-//            if (fragment != null) {
-//                FragmentManager fragmentManager = getSupportFragmentManager();
-//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//                fragmentTransaction.replace(R.id.main, fragment); // Đảm bảo ID đúng
-//                fragmentTransaction.commit();
-//                return true;
-//            }
-//            return false;
+
         }
     }
