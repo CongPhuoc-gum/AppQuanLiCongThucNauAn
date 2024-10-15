@@ -62,7 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nhập tên công thức"
-                android:background="@drawable/shape_add"/>
+                android:backgroundTint="@android:color/darker_gray" />
 
             <!-- Recipe Description -->
             <TextView
@@ -172,6 +172,5 @@
         android:layout_gravity="center_horizontal"
         android:text="Tiếp"
         tools:layout_editor_absoluteX="305dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
