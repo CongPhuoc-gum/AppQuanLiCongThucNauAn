@@ -22,10 +22,6 @@
 
     public class MainActivity extends AppCompatActivity {
 
-
-
-
-
         Button btn_login;
         Button btn_register;
         /** @noinspection deprecation*/
@@ -65,20 +61,6 @@
                     getSupportFragmentManager().beginTransaction().replace(R.id.home2,selectFragment).commit();
                 }
             });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 btn_login =
 
