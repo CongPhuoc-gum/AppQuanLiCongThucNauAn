@@ -22,8 +22,6 @@
 
 
 
-
-
         Button btn_login;
         Button btn_register;
         /** @noinspection deprecation*/

@@ -1,3 +1,5 @@
+import org.apache.tools.ant.taskdefs.XSLTProcess.Factory.Feature
+
 plugins {
     alias(libs.plugins.android.application)
 }
@@ -25,6 +27,11 @@ android {
             )
         }
     }
+
+    buildFeatures{
+        viewBinding = true
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -41,4 +48,6 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation(kotlin("script-runtime"))
+    implementation("org.jetbrains.kotlin:kotlin-script-runtime:1.8.0")
+    implementation (libs.material.v190)
 }
