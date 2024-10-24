@@ -29,43 +29,6 @@ public class home extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home2, container, false);
 
-        BottomNavigationView bottomNavigationView = view.findViewById(R.id.bottom_navigation);
-
-        // Initialize with the default fragment only if savedInstanceState is null
-        if (savedInstanceState == null) {
-            getChildFragmentManager().beginTransaction().replace(R.id.home2, new home()).commit(); // Replace with the fragment you want as default
-        }
-
-        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
-            @SuppressLint("NonConstantResourceId")
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                Fragment selectedFragment = null;
-
-                // Use if-else to handle the item selection
-                if (item.getItemId() == R.id.navigation_home) {
-                    selectedFragment = new home(); // Consider using an existing instance or a different fragment
-                } else if (item.getItemId() == R.id.navigation_library) {
-                    selectedFragment = new library();
-                } else if (item.getItemId() == R.id.navigation_search) {
-                    selectedFragment = new search_page_1();
-                } else if (item.getItemId() == R.id.navigation_favorites) {
-                    selectedFragment = new favourite_01();
-                } else if (item.getItemId() == R.id.navigation_profile) {
-                    selectedFragment = new profile();
-                }
-
-                // Replace the current fragment if one is selected
-                if (selectedFragment != null) {
-                    getChildFragmentManager().beginTransaction()
-                            .replace(R.id.home2, selectedFragment)
-                            .commit();
-                    return true;
-                }
-
-                return false;
-            }
-        });
 
         create_recipe = view.findViewById(R.id.btn_create_new);
         CardView cardView = view.findViewById(R.id.card_view);
@@ -83,9 +46,9 @@ public class home extends Fragment {
             @Override
             public void onClick(View view) {
                 FragmentManager fragmentManager = getParentFragmentManager();
-                Fragment createNewRecipeFragment = new Nhap_mk_moi();
+                Fragment createNewRecipeFragment = new addct();
                 fragmentManager.beginTransaction()
-                        .replace(R.id.forgetpass_2, createNewRecipeFragment)
+                        .replace(R.id.home2, createNewRecipeFragment)
                         .addToBackStack(null)
                         .commit();
             }

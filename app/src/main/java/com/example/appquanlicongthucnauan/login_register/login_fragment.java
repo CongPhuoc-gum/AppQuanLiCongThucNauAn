@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.appquanlicongthucnauan.MainActivity;
+import com.example.appquanlicongthucnauan.MainActivity2_home;
 import com.example.appquanlicongthucnauan.R;
 import com.example.appquanlicongthucnauan.home;
 
@@ -51,10 +52,11 @@ public class login_fragment extends Fragment {
             @Override
             public void onClick(View view) {
                 btn_login.setVisibility(View.GONE);
-                /////////////////chỗ này để trang chủ của Phước
-                Fragment fragment = new home();
-                FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.login_page, fragment).commit();
+
+                // Khởi tạo Intent để chuyển đến Activity mới
+                Intent intent = new Intent(getActivity(), MainActivity2_home.class);
+                startActivity(intent); // Bắt đầu Activity mới
+                getActivity().finish(); // Kết thúc Activity hiện tại nếu bạn không muốn quay lại
             }
         });
         return view;

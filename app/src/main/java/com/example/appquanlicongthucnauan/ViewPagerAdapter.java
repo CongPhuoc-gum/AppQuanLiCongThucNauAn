@@ -9,9 +9,9 @@ import com.example.appquanlicongthucnauan.Favourite_recipes.favourite_01;
 import com.example.appquanlicongthucnauan.Search_recipes.search_page_1;
 
 /** @noinspection ALL*/
-public class ViewPaperAdapter extends FragmentStatePagerAdapter {
+public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
-    public ViewPaperAdapter(@NonNull FragmentManager fm, int behavior) {
+    public ViewPagerAdapter(@NonNull FragmentManager fm, int behavior) {
         super(fm, behavior);
     }
 
@@ -38,6 +38,7 @@ public class ViewPaperAdapter extends FragmentStatePagerAdapter {
                 return new home();
         }
     }
+
 
     /**
      * Return the number of views available.

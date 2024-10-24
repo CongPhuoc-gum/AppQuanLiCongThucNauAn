@@ -45,7 +45,7 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/btn_create_new"
+                    android:id="@+id/btn_create_new_addct"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
