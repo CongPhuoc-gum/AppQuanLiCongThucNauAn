@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
@@ -25,12 +26,19 @@ public class home_preview_page extends Fragment {
             public void onClick(View v) {
                 FragmentManager fragmentManager = getParentFragmentManager();
                 if (fragmentManager != null) {
-                    fragmentManager.popBackStack("home", FragmentManager.POP_BACK_STACK_INCLUSIVE);
+                    fragmentManager.popBackStack();
                 }
             }
         });
 
+        CardView cardmoreView2 = view.findViewById(R.id.card_view_large);
+
+
+
+
+
 
         return view;
     }
+
 }
