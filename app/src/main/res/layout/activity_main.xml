@@ -87,7 +87,9 @@
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_login"
-        app:layout_constraintTop_toBottomOf="@id/wavy_buddie"></Button>
+        app:layout_constraintTop_toBottomOf="@id/wavy_buddie">
+
+    </Button>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

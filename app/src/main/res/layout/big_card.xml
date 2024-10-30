@@ -76,7 +76,7 @@
             android:layout_width="263.65dp"
             android:layout_height="48dp"
             android:layout_marginTop="15dp"
-            android:background="@drawable/button"
+            android:background="@drawable/button_login_black"
             android:text="@string/check"
             android:textSize="15sp">
         </Button>

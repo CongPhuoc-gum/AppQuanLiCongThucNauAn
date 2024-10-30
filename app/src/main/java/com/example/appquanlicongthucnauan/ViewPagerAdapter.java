@@ -31,7 +31,7 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
             case 2:
                 return new messenger();
             case 3:
-                return new favourite_01();
+                return new search_page_1();
             case 4:
                 return new profile();
             default:
