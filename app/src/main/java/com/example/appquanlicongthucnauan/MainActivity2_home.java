@@ -57,7 +57,7 @@ public class MainActivity2_home extends AppCompatActivity {
                         bottomNavigationView.getMenu().findItem(R.id.navigation_messenger).setChecked(true);
                         break;
                     case 3:
-                        bottomNavigationView.getMenu().findItem(R.id.navigation_search).setChecked(true);
+                        bottomNavigationView.getMenu().findItem(R.id.navigation_favorites).setChecked(true);
                         break;
                     case 4:
                         bottomNavigationView.getMenu().findItem(R.id.navigation_profile).setChecked(true);
@@ -83,7 +83,7 @@ public class MainActivity2_home extends AppCompatActivity {
                 } else if (itemId == R.id.navigation_messenger) {
                     viewPager.setCurrentItem(2);
                     return true;
-                } else if (itemId == R.id.navigation_search) {
+                } else if (itemId == R.id.navigation_favorites) {
                     viewPager.setCurrentItem(3);
                     return true;
                 }else if(itemId == R.id.navigation_profile){
