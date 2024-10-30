@@ -7,9 +7,6 @@
     android:layout_height="match_parent"
     android:background="#FFEAB6"
     tools:context=".MainActivity">
-
-    <!-- Icon App -->
-
     <!-- Wavy Buddie Image -->
     <View
         android:id="@+id/image_4"
@@ -34,13 +31,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_4" />
-
-    <!-- Yummy Text -->
-
-    <!-- Login Button -->
-
-    <!-- Register Button -->
-
     <TextView
         android:id="@+id/yummy"
         android:layout_width="wrap_content"
@@ -87,7 +77,9 @@
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_login"
-        app:layout_constraintTop_toBottomOf="@id/wavy_buddie"></Button>
+        app:layout_constraintTop_toBottomOf="@id/wavy_buddie">
+
+    </Button>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
