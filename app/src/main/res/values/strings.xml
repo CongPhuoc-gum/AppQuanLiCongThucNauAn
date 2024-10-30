@@ -38,7 +38,7 @@
     <string name="text_nhapmkl2">
         Nhập lại mật khẩu
     </string>
-
+    <string name="msg_demo">Hello World........</string>
     <string name="text_trangcanhan">Trang cá nhân</string>
     <string name="text_username_profile">Phan Công Phước</string>
     <string name="text_email_profile">nhomsk1@gmail.com</string>
@@ -52,6 +52,7 @@
 
 
     <!--    Cong Phuoc-->
+    <string name="string_search_msg">Tim kiếm tin nhắn......</string>
     <string name="string_search">Tim kiếm nội dung......</string>
     <string name="string_title_home">Công thức phổ biến</string>
     <string name="string_more">Xem thêm</string>
