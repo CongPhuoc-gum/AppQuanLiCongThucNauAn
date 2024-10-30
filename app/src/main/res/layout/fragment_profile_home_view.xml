@@ -21,23 +21,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.285" />
+
+
     <View
         android:id="@+id/image"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="48dp"
         android:background="@drawable/image_profile"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="117dp"
+        app:layout_constraintBottom_toTopOf="@+id/profile_thucpham"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
-
 
     <TextView
         android:id="@+id/text_username_profile"
         android:layout_width="wrap_content"
         android:layout_height="34dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="116dp"
         android:gravity="center_vertical"
         android:lineSpacingExtra="-5sp"
         android:text="@string/text_username_profile"
@@ -49,13 +52,13 @@
         android:id="@+id/text_email_profile"
         android:layout_width="201dp"
         android:layout_height="31dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="164dp"
         android:gravity="center_vertical"
         android:lineSpacingExtra="-1sp"
         android:text="@string/text_email_profile"
         android:textAppearance="@style/text_email_profile"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toEndOf="@+id/image"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -63,10 +66,9 @@
         android:id="@+id/profile_thucpham"
         android:layout_width="371dp"
         android:layout_height="56dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/border"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_email_profile">
 

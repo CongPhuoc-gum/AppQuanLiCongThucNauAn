@@ -3,10 +3,12 @@ package com.example.appquanlicongthucnauan;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +16,13 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class fragment_profile_home_view extends Fragment {
+
+    Button button_back;
+
+
+
+
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +68,20 @@ public class fragment_profile_home_view extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile_home_view, container, false);
+        View view =  inflater.inflate(R.layout.fragment_profile_home_view, container, false);
+        button_back = view.findViewById(R.id.button_back);
+        button_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getParentFragmentManager();
+                if (fragmentManager != null){
+                    fragmentManager.popBackStack();
+                }
+            }
+        });
+
+
+
+        return view;
     }
 }
